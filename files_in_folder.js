@@ -1,4 +1,6 @@
-const files = {
-  "ads.zip": "ADS Programs",
-  "oop.zip": "OOP Programs",
-};
+// Sample
+// const files = {
+//   "ads.zip": "ADS Programs",
+// };
+
+const files = {};

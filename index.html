@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Files</title>
+    <script src="files_in_folder.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul id="list" class="container">
+    </ul>
+</body>
+
+<script>
+    let ul = document.getElementById("list")
+    for (file in files) {
+        let title = files[file]
+        let path = "files/" + file
+        ul.innerHTML += `<li><a href="${path}">${title}</a></li>`
+    }
+</script>
+
+</html>

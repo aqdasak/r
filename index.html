@@ -20,8 +20,9 @@
 
         <h3>Download Files</h3>
         <ul id="list-file-download" class="container">
-            <a href="https://drive.google.com/drive/folders/1xUCCxTsF6ZG4ZQ5G7ABpfF2WKD3PS41O?usp=share_link">Go to
-                Drive</a> <b>🡕</b>
+            <a href="https://drive.google.com/drive/folders/1xUCCxTsF6ZG4ZQ5G7ABpfF2WKD3PS41O?usp=share_link"
+                target="_blank">Saved
+                Files</a> <b>🡕</b>
         </ul>
     </div>
 </body>
@@ -31,7 +32,7 @@
         let div1 = document.getElementById("list-redirect")
         for (link in links) {
             let title = links[link]
-            div1.innerHTML += `<a href="${link}">${title}</a> <b>🡕</b>`
+            div1.innerHTML += `<a href="${link}" target="_blank">${title}</a> <b>🡕</b><br>`
         }
     } else {
         let heading = document.getElementById("list-redirect-heading")
@@ -42,7 +43,7 @@
     for (file in files) {
         let title = files[file]
         let path = "files/" + file
-        ul2.innerHTML += `<li><a href="${path}">${title}</a></li>`
+        ul2.innerHTML += `<li><a href="${path}" target="_blank">${title}</a></li>`
     }
 </script>
 

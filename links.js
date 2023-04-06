@@ -4,8 +4,6 @@
 // };
 
 const links = {
-  "https://script.google.com/macros/s/AKfycbyf4JZ9PFSPGXlZRm5zTM-c8_6jnR1YjqW70seeDJ43o1faqqyLLlHpmC1UbkR5ekmqCQ/exec":
+  "https://script.google.com/macros/s/AKfycbzGISRK-Y-nje3F-jk3wNMG7r-XEMHhCTO1XSVbLL16q1knJljbMEnPcTEeqtMTh9HU/exec":
     "Upload Files",
-  "https://drive.google.com/drive/folders/1z_9NWUReRiJzMaEzSpyy-1YsWmnC8iKo":
-    "Uploaded Files",
 };

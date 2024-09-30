@@ -7,12 +7,9 @@
 // ]
 
 const links = [
-  [
-    "Upload Files",
-    "https://script.google.com/macros/s/AKfycbzGISRK-Y-nje3F-jk3wNMG7r-XEMHhCTO1XSVbLL16q1knJljbMEnPcTEeqtMTh9HU/exec",
-  ],
-  [
-    "Download Files",
-    "https://drive.google.com/drive/folders/1pj7vO457n0olMe9YvKWkuPlVvZXySY2E?usp=sharing",
-  ],
+  ["𝕏 X (Twitter)", "https://x.com/aqdasak"],
+  ["🗐 Linkedin", "https://www.linkedin.com/in/aqdasak/"],
+  ["👨‍💻 Github", "https://github.com/aqdasak"],
+  ["📄 Files", "https://aqdasak.github.io/files"],
+  ["🛠 Tools", "https://aqdasak.github.io/tools"],
 ];

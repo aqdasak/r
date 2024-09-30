@@ -6,44 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
-    <script src="files_in_folder.js"></script>
-    <script src="links.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div>
-        <h3 id="list-redirect-heading">Links</h3>
-        <div id="list-redirect" class="container">
-
-        </div>
-
-        <h3>Download Files</h3>
-        <ul id="list-file-download" class="container">
-            <a href="https://drive.google.com/drive/folders/1pj7vO457n0olMe9YvKWkuPlVvZXySY2E?usp=sharing"
-                target="_blank">Saved
-                Files</a> <b>🡕</b>
-        </ul>
+    <div id="main-container">
+        <h2 id="heading">Links</h2>
+        <div id="links-container" class="container"> </div>
     </div>
 </body>
 
+<script src="links.js"></script>
 <script>
-    if (Object.keys(links).length > 0) {
-        let div1 = document.getElementById("list-redirect")
-        for (link in links) {
-            let title = links[link]
-            div1.innerHTML += `<a href="${link}" target="_blank">${title}</a> <b>🡕</b><br>`
+    if (links.length > 0) {
+        const linksContainer = document.getElementById("links-container");
+        for (const link of links) {
+            const title = link[0];
+            const url = link[1];
+            linksContainer.innerHTML += `
+            <div>
+                <a href="${url}" target="_blank">
+                    ${title}
+                </a>
+                ↗
+            </div>`;
         }
     } else {
-        let heading = document.getElementById("list-redirect-heading")
-        heading.innerHTML = ""
-    }
-
-    let ul2 = document.getElementById("list-file-download")
-    for (file in files) {
-        let title = files[file]
-        let path = "files/" + file
-        ul2.innerHTML += `<li><a href="${path}" target="_blank">${title}</a></li>`
+        let heading = document.getElementById("heading");
+        heading.innerHTML = "";
     }
 </script>
 

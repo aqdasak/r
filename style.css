@@ -33,12 +33,24 @@ a:hover {
   background-size: 0 3px, 100% 3px;
 }
 
-/* Presentational Styles */
-body {
-  display: grid;
-  font-family: "Poppins", sans-serif;
+#main-container {
+  padding-top: 4em;
+  font-family: sans-serif;
   font-size: 24px;
   font-weight: 400;
-  height: 95vh;
-  place-items: center;
+}
+
+#heading {
+  text-align: center;
+}
+
+#links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+#links-container div {
+  margin-bottom: 1rem;
 }
